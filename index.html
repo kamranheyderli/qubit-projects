@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <title>qubit.az</title>
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="logo">
+            <svg width="79" height="24" viewBox="0 0 79 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M0 0H79V24H0V0Z" fill="url(#pattern0)" />
+                <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_1_105"
+                            transform="translate(-0.00632911) scale(0.00202532 0.00666667)" />
+                    </pattern>
+                    <image id="image0_1_105" width="500" height="150"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAACWCAYAAAAonXpvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAEqtJREFUeNrsnf1x2zgTh/c8+T/qwEwF0VUQuoLoKjBdwTkVmK5ATgVyKrBTgZQK5FQgpgL7KsgrvAZjnU6RZIlcLIDnmcE4d5OY5ALYH3bxJQIAAAAAAAAAAAAAAB3wBybYymBZhmv/72lZHjANAAAg6DZwQl34n6f+z47ylb9nVeC/rfz3g/8zQMoUa6XtS2eYpnf/Ndjw//E7CHoWTsd1gA/+Z6n0XNexZsvy3f+c0eQgQkp5yVa9XRGTIb5FlWpZPi7LaMffe/C+5vOyNJgNUsA1+vGyzJflp6EyXZbLlYwAgIVor/Ttsl6WO99Oj2nn0B2uXh4PrIcJvgZiFvHJEY1fuyz8oIMOB5rR9sQL9qLHtg3dDLS6CEge/aAAwDyFF8VYRPx3xXXcSjbPiwF0Ra3UnuH4gVfXPm2CWcEqlRyfFrRYHoU0GSDouYt5X/WCqIM5IV9IekL+u/n2kioHBD0bCuk/21hjZkDIEXZA0BH0ftFaxDvE1BCCUcZCvl7uhFQ8IOgpBy2aQQKAGkNJc468q5QZi+cAQU8L7cClxOTQN06oxoj2XlveRjQXQNCTYCRhMn4AvVEK6fVDOiXROiDocTMJ5D/wHQlxYiwqdyn2gmp59cieaB0g/mAmp+dCooLezpVzktFxA6I7PyhixA0QX/8NFciw2h1B74zKizmNqhsuhSwHQGyE9H+nmB9B7wIXTU6IKHtxDm4va4kpAGAHqQz+8XdL3gR4ZpsepgL6tbGL1C+W5RZzAEACgcpg5ed7/3NVR7K/sldb0FuhIcWug8uAfPDCDgCwzpOhIGToMwaunK78uaCa7Al6u/iNFLsulf+JqAPYpAn47O+KzyrXfn5YEXKISNAR8/CiPvCi/oQ5ABB0xWc/4vt10FgUh5jbYEQ9AJhllvBz8TmJCDpibgtXH2PMAGCOrwGe+RA4OwARCXqBmJukkufFcgBgh/sAz/yM2RH0fWi3piHmiDoA7MZFyrcJPw8iFnS2psUh6hVmADDDtegtWv2EuRH0fZgg5tHg6qrEDABmovRrhefcS5gUP/RM19vWYo76Zr5D/ZCXlZ+NbF40UsjLYQdOENtDEGIURzc18k7YzgZggRt5PgWtLz/qFsJxJgXsxEXlMd0j7qYF6h5EuPS/dx6RLeY032yohfvQY2DSUz8Psa7pJ20uLlwjWUQi4pViox7458Ug7jXNGEHHuZpi3GF9hFykjKAzmuysPPqOUQS2UeHt9GjYViVNGUHHuZqiPDJYcv92FPgbEPSIGBkW8lrsbZ0b+PeyKOwLYashgo5ztchrM31zsbOeCUFX4tjr5gYGRcAt7nIHJtyI7YVeA585qIy9l7MbW1rSFvSrCHwLbKaQ5/VKrrxf8b3O17mLVhp5WeBrBS2xpc0dSZdzPF3NExWR2XAo9ubY2XZIhE60BEToGVGKrfT6KHJ71sKqd0DQAUGnzQVgKnZWrqcy7+siYyu7BSqaOIKOcwUEPX0qYatVX7Tn4FvIerBADkHHuQKCnjiho8gUUuy7sLAVsKapI+g4V0DQic77FPMhtiZKBwQdEHTaXLzReU5ibkXUidIRdJwrIOiIC2KeiN2J0hF0nCsg6ETniHlkjnhTuaTp045wroCgp0OoI14R8xdCLZRbYHoEHecKCLptTl7xd88DvaM7hvSBqvo/F4FsUUj6uwoAALKgCBQZjjH9xroIcbHLHaYnQidaAiL0+CP0KsC7PQiXhGyi8ZG6NiOJ75x8AIBseLPn3wuRbr+gen7LvS/aaXD3vBvMDwq4wWN7q9hb2b2OxgUA/8jLTWMNJsyOsoffOUvNSK4jsffZHm4rmXbqfd5Bh0u5/dRiP7Vo9R2dgLvdFHcdtuup/94yon6tUT9Tg+3FaomKfVLu2tF5QxS4F+7+4+sAg7sC00OHUbhbJ7PwZeyzQF2de+CE/MoLmBskTITFnZAw+wi6dge49mIFu7kR/dQiDhGOpfLZnoWPyjUGiQP/3DYDMGZwCrkJunZE5sTplmp59QBIk3NMDgcKar0SKQ8Dv8ulH1BMEHbIRdDLxMUpBW6Vo/ShcBQsvK69TLyQXxlsOxXCDrkI+keic6J0AwM9iA8nlG7uei5htr0e8r5zYUEuEKF3wmeq46goXXPdwQdMDjuYRDjwG/gsghN2jpuGpARduzMSncdjPyJ0SJmhF3UuJYJkBF1zhKodYaaIZoaDeXTIAbcSfkJbhxQEXTOt+pWqOJpGdC9uISUJOVDJ81oARB2iFvRC8T3uqYpO+KL4rBJzQyYMEXWIXdC1IjDEvDtmis86xdyQmajPha1tEKGga6ZTv1ENneFS7o3Ss3BskBuuzd8RqUNsgq7prGdUQ5T2LDE1ZBqpk34HIvQtUSV0x3fFZ+HUIFdRv8MMEIugE53HCyvdAfqnlOdtbQDmBV1ry1pDFTBIAogUd/BMhRmACP2ZH1RB1AMlInTIHa5hBQSdCD0JuzKHDrnj+gDz6WBa0EsEPWo4RhdAD5epqjED5B6hQz98xwQAqrhb2grMAAg6xMp7TADwiwkmgJC8Cfx8UsNxwxw6wAvlsowkreOsb+W4nTNuOkJre98Zgo6gQ3qQOYgfJyLf/E/nJx7WBpJDX957IS2MvPc4MUFvJJ61TrPcO01oQS+EhXFA5gBeHPIXL4hPOwKB2ZoDd+L+t4+QQ9a/82mVj2wBMVeFOXQAsOCMz3y5lcMydy6Cv1iWd8tyLWGzf1dUKSDoEBvclAfH4ET3Ly/ksw5/Z70sfwaM2tooHcCEoGuNbkmN9sNbTAARROUumu5rvrnxA4XrQN93ThWDFUHXuuAjt6ND3QBmLv1vb+FIVrDMrRdbjcDBResXAb6xFPalgxFB1+I0MzGferGtehZ1Mh9gWcwvAjwzxJamv6lusCDoWin3XEawq2Le0qeoa0XoM7oQGBfz1baq/ewRVQ4WBF3r6NAyUzHvU9RJt4NFQgjqpgGF5px6QX+EnCL01AXIfdt8xzd2Leqa9nygC8EetKvZLVCLbmaJxXEQXNA1HXWqgj70kXmxx9/tUtQ1T0njpD/YhwtjbUXzfUqqH0ILeqP4Dh8TFvPXLE7rStS15u2IzmEfXDRs7ShU598+K/oCFqlCNoKe2gj2EDHvStQL0Vto2NB9YM9o2CI3im2YeXQIKujtyFqDgaSzGvQYMe9C1DXtyJ3rsIt7wwO/J8UovaQpQGhB10ypppB2d0I8l27Sa4eKuuYCnBndB3bw2fj73YrOXDq3/0FwQdeMwGKP0I+Jqrv6nYWwwh3s0EQw6HsSnfl9Uu4QXNA1O+NA4r3MoA8xP+R3a55K1Qgr3GE7sdwJ/lXhGQXNAUILeiO6818x7tfsU8xf8wztAdGMrgM7iOUmPq2BB6IOQQVd23GXEtfikUsFMd9X1C9Fd2sM16ZCSoM+jXdF0CG4oGs77lguM3DiOjaSDRgEsNs9XQe20EhcUzKsB4EsBF3bcY8iiNInEm6+f5Ooa0fnD8L8OewW9Jj4R+EZLIzrF7KGewi61irQVa4Q871FvQhgr690G0hM0GcKz+C0OOidN3s6cM1tZaV/nrW0bi12VuJXK4KuDel22MUPTABgL0IP5cDHBke07qhIS3NtlehPTzTCfCMAQLSCHiLt7iJPa6l3Z4ezzAXtM10GACBeQXd8CfBul2JvgVzuok66HfbhLSYAsCvo9xJmZfOd2Eu95yrqli/aAFvEtqJbI3DIte+wI8agoDtCpFudmE+NNtLcRP0L3QX2pIjsfTUyCrkKOmtujAr6bcDR/sSg7XIS9UZIt0O6gs4ecchO0JuAol7J87YxRD0MLIbbD67JfKHkXYlUwa6gO64DvuuV2LyRLXVRfwo4kItNTDg85IWPtJX/9CMAU4IeMkp3WDipLTdR/4wzggMYRfKeGgMPovP++YAJXi/ooaN0RF3/m24iffeCCD24/csI3lPDlzQ0B7Aq6KGj9FbUWSgXX3Su6dhCCDqLq/7NeQRirjEI+05TAKuC3kbpTwY641TYp95nVHHTw+/UQjs6LAU29dHC8PtpDThmNAWwLOiN2Fj57JzoXDhRrg8sDNqO4VT5eR8FNmH19kTNq5oRdIiCxbL8NFJqg/YZ+AHHz8hKn4f5aH3DIuG+cAx1gPZUGuyXC6N9qY68f4fs80ToR/77C2ORwMKY84g1Uv+UQNsuRC/dO5L4DlPRxNrtiVeK9fWN6lcj+zUsxwq6SyVZOkGs8KPPqSEHG5uoX0s6i/oqRYGA7Y52bORd3ODrUvF5nLCoRxnZ+xb+nV17rH2p/P8LNgB2D34Um6njiZFKvjRso/U0dd8NSfN7HhW+5zJAPR1DHbB9VYH74VC5Hy6M1k+qKfeF2Kcd3O4z5TP3/kVd3Edif064CmCYSmytM9hVNFJW2vYY99w5Q9RTrIIeUtSLAIPqsdH6SVXQLQwat/mK6RGBSa2tX+MIBOtRXg6mGfToOOrIhFxzUeE0wLeNeuqgobIuMQt6CKcbqq4KBD3JrFyoOlVdIxbjiu65H4gcs6hp4P/9WOJc0a7tZO8CDeS67AijwFMosQv6T9Gbxy4D1dXUcP2kLOitX7fCRNNXv+nwxd3irwuxedjLtpH7cM25zPy3bDvd6dQPAIaSznGf7cl7tz0/57von/M98O3y+shMhPs9V6K7qCpV3AD4o/cZTU91HrKuvlDFQf26E/UzCXuWRl/HlGv56l/Ry08KkbrR9rE44BvbhSxWFjamEKH3OT9YSdgpr4Xx+tGO0OcR9XVraXYT5zvUCCOi/hsKQ99559tqe2rYaqn9SNjiWogU+2Yr7MUREXllpL4qBP1fTCX8IP5S9LYyl5LgeoEJwoio/4YF9kXQZfscaC279+OW3lHfGXr3RQT1k5ugr4tge1ZJe8nXdK0c29c0v3eSa0VS7Ig6gz0E/VBHPE+8z6Qo6OOM+loZ4B1/ZR5Oeq7IvySt+8Fzo69FHV8xLRyQUnfO0vLxno2Ev1raIj8y+ta/Qz6zb0FP7X5wRL0b7iXum9wANnGBCTaSi/9vtzBrM9ISdEQdUd8m6gCp4CLzGWbYSC52CZU9Ktpnnyg9EFFH1Ndhny6kgvNvnzBD9gP4MvRg4kS50Z8RmSHqK6N2IhpIgb+EKaRd5LBu5m3AZxfagt6Kumv8t7RvRF2eT24DiJkbBqZE6KtRckhOAj33QlhAgqgTpUPcuLZLqn3/YI5ArufswEnAF3CV+6eQqspd1HGIECONPGcbYX/IyPXHP6EF3eEWyb0T5tVzFvUHOjpEGG0yb37YICjlKP1b6Bc4MdQ5PtFBshX1WtgBAfGIOTt2DidlPx/yuxorgt7iFpe4FPyMNr9/BSbEBQM6QMyzsGGq66dCtouZNUFvReoM576zQ7hR7jsjHcO9w21HnYGFkoCYp4+bYk1xmm0WSLcaixH6KrdesG5o+1vtchtYBLsS89WOjqjHK3ip0iDmnVNLmvPpIdaDRXVIVyHczuVuRyq32KiStK5XrSTeG8GGkudta7XEe5PbrqtcB4r+rpb0blvbhnXf/lqGAXzOQCIkR2HfJeShRLBSqO/SN9YYHX+ugt62w8dE+t84UOSak6BrfbNmX7tTfL869pRG4TtaKk5jU7mTw84F1hD1Srmu5xE6/pwFvY1S5hH3P+dbRgmL29SgXx8Z9emH+i2Nb5mnNFcx8OISs+NYdyJjWbms3mC6ukrYyR1aZ5tskrugt/1zHGE/nAROYeYq6G2buZP4Bb0doPTtewpJlKF3HotIo/GqYyfSh6hXgeu48I7I0nTI7zoUgv7vvjmVOKZMSgO+LGdBX51us9JmLAZX7VqdLIhB3J2IX/Y8wuqyMVV09l9lsUc6FkHf3B4t9smFsfaNoP+7r4eO2K0FV/NtYv5H4uJe+Ebxwf8MlaJw211m8nw0oPuptcWn8inEY+h6a1qXnf1c0Rm7evuypy36dphnR7aJ8x7eaV/btM8PHQ2/pj61Bf1K4dvPJB4KP4g+DxCZdqGRQ++Hj313t135Wjij5T8No/Yjvz7m3+f+d9feaYXeUnDMCLGKoE7btRR30v1ClIV0s64BbGTSYqhPIvTdPrwNVPpuO489+OL5Ae8w2bfN/oFf+dVICi8O66OoD2v//W1D9O1GTI3YPY71kEjdamS+T+Q+9PVWvGJU/OTr0pXvPopp6Bpq4n6+UnddR6Ouz95LHAfD9JVBWfdZqdxy2Prsof/z+7Ugarj237O1f+/6+A9lXz6Ul8zxuo9a9UOvzugi6PlQ+ih2n4xBrGK+6/u3CTnYG5Sdrji7cg/hbgfcbZ3OMCUApBwJ7UpLV5gJAAAgblFHzAEAACIXdcQcAAAgclFHzAEAACIXdcQcAAAAAADAAv8TYADI83Udg2LwDQAAAABJRU5ErkJggg==" />
+                </defs>
+            </svg>
+        </div>
+
+        <div class="head-middle">
+            <nav>
+                <ul>
+                    <li><a href="#">Why Qubit?</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Case studies</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="head-right">
+            <button><a href="#">Book a demo</a></button>
+            <a href="#">Log In</a>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+    <!-- start-first-section -->
+    <section class="firstsection">
+        <div class="content">
+            <h4>Driving growth with personalization.</h4>
+            <h2>Make ecommerce</h2>
+            <h3>More personal.</h3>
+            <p>Hundreds of brands use <span>Qubit CommerceAI </span> to power the next generation of product
+                recommendations, badging
+                and insights to build exceptional customer experiences.</p>
+        </div>
+        <div class="button">
+            <input type="search" placeholder="Enter Your Name">
+            <button><a href="#">Book a demo</a></button>
+        </div>
+    </section>
+    <!-- end-first-section -->
+
+    <!-- start-secondsection -->
+    <section class="secondsection">
+        <h2>Trusted by leading brands.</h2>
+
+
+        <div class="cards">
+            <div class="card">
+                <img src="./assets/image/Rectangle (1).jpg" alt="">
+                <h3>CLINIQUE</h3>
+                <P>Clinique builds relationships with millions of customers each year.</P>
+            </div>
+            <div class="card">
+                <img src="./assets/image/Rectangle.png" alt="">
+                <h3>River Island</h3>
+                <P>River Island transforms the customer experience with personalization.</P>
+            </div>
+            <div class="card">
+                <img src="./assets/image/Rectangle (1).png" alt="">
+                <h3><img src="./assets/image/Rectangle (2).png" alt=""></h3>
+                <P>MandM Direct drives increase in revenue with deep learning recs</P>
+            </div>
+        </div>
+    </section>
+    <!-- end-secondsection-->
+
+    <!-- start-thirdsection -->
+    <section class="thirdsection">
+        <div class="text">
+            <h2>We specialize in your industry.</h2>
+            <p>Learn how we are delivering personalization at scale across sectors.</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 42.78C25.05 40.26 25.59 31.71 30.66 24.78C30.91 24.43 31.17 24.1 31.43 23.78C30.93 14.1 25 6.47998 25 6.47998C25 6.47998 19.07 14.1 18.57 23.74C18.83 24.06 19.09 24.39 19.34 24.74C24.41 31.71 25 40.26 25 42.78Z" fill="#6F2CFF"/>
+                        <path d="M18.57 23.7398C12.51 16.2298 3.23001 13.5498 3.23001 13.5498C3.23001 13.5498 2.87001 24.0598 8.88001 32.3398C14.89 40.6198 25 43.5198 25 43.5198C25 43.5198 18.54 35.2298 18.54 24.9998C18.54 24.5798 18.55 24.1598 18.57 23.7398Z" fill="#D15187"/>
+                        <path d="M25 42.7798C24.95 40.2598 24.41 31.7098 19.34 24.7798C19.09 24.4298 18.83 24.0998 18.57 23.7798C18.57 24.1998 18.57 24.6198 18.57 25.0398C18.54 35.2298 25 43.5198 25 43.5198C25 43.5198 25 43.2598 25 42.7798Z" fill="#A445BB"/>
+                        <path d="M46.77 13.5498C46.77 13.5498 37.49 16.2298 31.43 23.7398C31.43 24.1598 31.43 24.5798 31.43 24.9998C31.46 35.2298 25 43.5198 25 43.5198C25 43.5198 35.1 40.6098 41.12 32.3398C47.14 24.0698 46.77 13.5498 46.77 13.5498Z" fill="#D15187"/>
+                        <path d="M31.43 23.7402C31.17 24.0602 30.91 24.3902 30.66 24.7402C25.59 31.7402 25.05 40.2602 25 42.7402C25 43.2202 25 43.4802 25 43.4802C25 43.4802 31.46 35.2302 31.46 25.0002C31.46 24.5802 31.45 24.1602 31.43 23.7402Z" fill="#A445BB"/>
+                        </svg>
+                        <h4>Beauty and cosmetics</h4>
+                </div>
+                <h3>Discover relevant products. Push samples. Upsell and replenish.</h3>
+                <p>Explore our solutions for beauty and cosmetics.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 46.4201C36.83 46.4201 46.42 36.83 46.42 25.0001C46.42 13.1701 36.83 3.58008 25 3.58008C13.1701 3.58008 3.58002 13.1701 3.58002 25.0001C3.58002 36.83 13.1701 46.4201 25 46.4201Z" fill="#6F2CFF"/>
+                        <path d="M20.54 23.5902C22.2245 23.5902 23.59 22.2247 23.59 20.5402C23.59 18.8558 22.2245 17.4902 20.54 17.4902C18.8555 17.4902 17.49 18.8558 17.49 20.5402C17.49 22.2247 18.8555 23.5902 20.54 23.5902Z" fill="#D15187"/>
+                        <path d="M29.46 23.5902C31.1444 23.5902 32.51 22.2247 32.51 20.5402C32.51 18.8558 31.1444 17.4902 29.46 17.4902C27.7755 17.4902 26.41 18.8558 26.41 20.5402C26.41 22.2247 27.7755 23.5902 29.46 23.5902Z" fill="#D15187"/>
+                        <path d="M20.54 32.5102C22.2245 32.5102 23.59 31.1446 23.59 29.4602C23.59 27.7757 22.2245 26.4102 20.54 26.4102C18.8555 26.4102 17.49 27.7757 17.49 29.4602C17.49 31.1446 18.8555 32.5102 20.54 32.5102Z" fill="#D15187"/>
+                        <path d="M29.46 32.5102C31.1444 32.5102 32.51 31.1446 32.51 29.4602C32.51 27.7757 31.1444 26.4102 29.46 26.4102C27.7755 26.4102 26.41 27.7757 26.41 29.4602C26.41 31.1446 27.7755 32.5102 29.46 32.5102Z" fill="#D15187"/>
+                        </svg>
+                        
+                        <h4>Fashion</h4>
+                </div>
+                <h3>Supercharge merchandising. Reach your best customers.</h3>
+                <p>Explore our solutions for fashion.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 3.58008C23.787 3.58089 22.5869 3.82909 21.4731 4.30951C20.3593 4.78993 19.3552 5.49247 18.5222 6.37418C17.6891 7.25589 17.0447 8.29824 16.6282 9.4375C16.2117 10.5768 16.032 11.789 16.1 13.0001L16.6 21.4201H33.4L33.9 13.0001C33.968 11.789 33.7883 10.5768 33.3718 9.4375C32.9553 8.29824 32.3109 7.25589 31.4778 6.37418C30.6448 5.49247 29.6407 4.78993 28.5269 4.30951C27.4131 3.82909 26.213 3.58089 25 3.58008V3.58008Z" stroke="#6F2CFF" stroke-width="2.14" stroke-miterlimit="10"/>
+                        <path d="M41.64 46.4202H8.36C8.13423 46.4203 7.91076 46.3749 7.70292 46.2868C7.49508 46.1986 7.30714 46.0695 7.15033 45.9071C6.99352 45.7447 6.87105 45.5523 6.79024 45.3415C6.70943 45.1307 6.67193 44.9058 6.68 44.6802L7.6 21.7602C7.62057 21.3286 7.80661 20.9216 8.11947 20.6236C8.43233 20.3256 8.84795 20.1597 9.28 20.1602H40.72C41.152 20.1597 41.5677 20.3256 41.8805 20.6236C42.1934 20.9216 42.3794 21.3286 42.4 21.7602L43.32 44.6802C43.3281 44.9058 43.2906 45.1307 43.2098 45.3415C43.1289 45.5523 43.0065 45.7447 42.8497 45.9071C42.6928 46.0695 42.5049 46.1986 42.2971 46.2868C42.0892 46.3749 41.8658 46.4203 41.64 46.4202Z" fill="#6F2CFF"/>
+                        <path d="M42.4 21.7602L42.5 24.3602H39.18V28.5602H10.82V24.3602H7.5L7.6 21.7602C7.62057 21.3286 7.80661 20.9216 8.11947 20.6236C8.43233 20.3256 8.84796 20.1597 9.28 20.1602H40.72C41.152 20.1597 41.5677 20.3256 41.8805 20.6236C42.1934 20.9216 42.3794 21.3286 42.4 21.7602Z" fill="#D15187"/>
+                        <path d="M39.19 28.5601H10.82V33.8101H39.19V28.5601Z" fill="#A445BB"/>
+                        <path d="M27.63 33.8099C27.632 34.3305 27.4794 34.84 27.1916 35.2738C26.9039 35.7076 26.4938 36.0463 26.0134 36.2469C25.533 36.4475 25.0039 36.501 24.4931 36.4006C23.9823 36.3003 23.5127 36.0506 23.1439 35.6832C22.7751 35.3158 22.5236 34.8472 22.4213 34.3367C22.319 33.8263 22.3705 33.297 22.5693 32.8158C22.768 32.3347 23.1051 31.9233 23.5378 31.6339C23.9705 31.3444 24.4794 31.1899 25 31.1899C25.6958 31.1899 26.3632 31.4657 26.8562 31.9567C27.3491 32.4478 27.6274 33.1142 27.63 33.8099Z" fill="#D15187"/>
+                        </svg>
+                        <h4>Luxury</h4>
+                </div>
+                <h3>Drive brand experience online. Look after your VIPs.</h3>
+                <p>Explore our solutions for luxury.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.91 30.23C41.6844 30.23 42.4271 29.9223 42.9748 29.3747C43.5224 28.8271 43.83 28.0844 43.83 27.31C43.8282 27.0284 43.7844 26.7486 43.7 26.48L38.13 28.15C38.3069 28.7502 38.6733 29.2771 39.1743 29.652C39.6754 30.0269 40.2842 30.2296 40.91 30.23Z" fill="#D15187"/>
+                        <path d="M40.91 24.3901C40.1373 24.3928 39.3972 24.7016 38.8517 25.2489C38.3063 25.7962 38 26.5374 38 27.3101C38.0065 27.5954 38.0536 27.8782 38.14 28.1501L43.71 26.4801C43.531 25.8764 43.1617 25.3468 42.6571 24.9701C42.1525 24.5935 41.5397 24.39 40.91 24.3901Z" fill="#A445BB"/>
+                        <path d="M6.16998 27.31C6.16927 28.0096 6.42065 28.6861 6.87807 29.2155C7.33549 29.7449 7.96833 30.0918 8.66067 30.1926C9.353 30.2934 10.0585 30.1414 10.6479 29.7644C11.2373 29.3875 11.6711 28.8108 11.87 28.14L6.29998 26.48C6.2156 26.7486 6.17178 27.0284 6.16998 27.31Z" fill="#D15187"/>
+                        <path d="M9.08999 24.3901C8.46203 24.3922 7.85147 24.5966 7.34889 24.9731C6.8463 25.3496 6.47848 25.8781 6.29999 26.4801L11.87 28.1401C11.9578 27.872 12.005 27.5922 12.01 27.3101C12.01 26.9267 11.9345 26.547 11.7877 26.1927C11.641 25.8384 11.4259 25.5165 11.1547 25.2454C10.8836 24.9742 10.5617 24.7592 10.2074 24.6124C9.85315 24.4657 9.47345 24.3901 9.08999 24.3901Z" fill="#A445BB"/>
+                        <path d="M25 35.2698C29.8822 35.2698 33.84 31.312 33.84 26.4298C33.84 21.5476 29.8822 17.5898 25 17.5898C20.1178 17.5898 16.16 21.5476 16.16 26.4298C16.16 31.312 20.1178 35.2698 25 35.2698Z" fill="#A445BB"/>
+                        <path d="M48.88 22.8898H33.1C32.472 21.4509 31.4722 20.2052 30.2033 19.2807C28.9344 18.3563 27.4421 17.7864 25.88 17.6298V11.6298C25.8813 11.516 25.8601 11.4031 25.8174 11.2976C25.7748 11.1921 25.7117 11.0961 25.6317 11.0152C25.5517 10.9343 25.4564 10.87 25.3514 10.8262C25.2464 10.7823 25.1338 10.7598 25.02 10.7598C24.9062 10.7598 24.7936 10.7823 24.6886 10.8262C24.5836 10.87 24.4883 10.9343 24.4083 11.0152C24.3283 11.0961 24.2652 11.1921 24.2226 11.2976C24.1799 11.4031 24.1587 11.516 24.16 11.6298V17.6298C22.5979 17.7864 21.1056 18.3563 19.8367 19.2807C18.5678 20.2052 17.568 21.4509 16.94 22.8898H1.12C0.889262 22.8898 0.667974 22.9814 0.504817 23.1446C0.34166 23.3077 0.25 23.529 0.25 23.7598V23.9998C0.250152 24.1876 0.310416 24.3705 0.421975 24.5216C0.533533 24.6728 0.690531 24.7843 0.87 24.8398L6.3 26.4798C6.49202 25.8005 6.92438 25.2142 7.51655 24.8301C8.10872 24.4459 8.82033 24.2901 9.51885 24.3917C10.2174 24.4932 10.8552 24.8452 11.3135 25.382C11.7718 25.9188 12.0193 26.604 12.01 27.3098C12.005 27.5919 11.9578 27.8716 11.87 28.1398L16.76 29.6098V29.3998C18.04 32.2098 21.24 33.4998 24.99 33.4998C28.74 33.4998 31.99 32.1998 33.23 29.3798V29.6098L38.11 28.1498C38.0236 27.8778 37.9765 27.595 37.97 27.3098C37.9607 26.604 38.2082 25.9188 38.6665 25.382C39.1248 24.8452 39.7626 24.4932 40.4612 24.3917C41.1597 24.2901 41.8713 24.4459 42.4635 24.8301C43.0556 25.2142 43.488 25.8005 43.68 26.4798L49.11 24.8498C49.2895 24.7943 49.4465 24.6828 49.558 24.5316C49.6696 24.3805 49.7298 24.1976 49.73 24.0098V23.7598C49.7301 23.5325 49.6412 23.3141 49.4823 23.1515C49.3234 22.989 49.1073 22.895 48.88 22.8898Z" fill="#6F2CFF"/>
+                        <path d="M30.3 22.0098V22.8898L25 24.6598L19.7 22.8898V22.0098H30.3Z" fill="white"/>
+                        </svg>
+                        <h4>Airlines</h4>
+                </div>
+                <h3>Increase loyalty. Boost ancillary sales. Capture every opportunity.</h3>
+                <p>Explore our solutions for airlines.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.28 25.7002C38.47 30.8902 33.39 36.6302 29.28 40.7002C30.6108 42.2259 32.0405 43.6623 33.56 45.0002C33.8735 45.2806 34.2794 45.4356 34.7 45.4356C35.1206 45.4356 35.5265 45.2806 35.84 45.0002C38.33 42.7902 44.06 37.2802 44.06 33.2302C44.0632 31.7668 43.7228 30.3231 43.0662 29.0153C42.4097 27.7074 41.4554 26.572 40.28 25.7002Z" fill="#D15187"/>
+                        <path d="M40.28 25.6998C38.8895 24.6627 37.2378 24.0328 35.5098 23.8807C33.7817 23.7286 32.0455 24.0603 30.4951 24.8386C28.9448 25.6168 27.6416 26.8111 26.7311 28.2877C25.8207 29.7643 25.3391 31.4651 25.34 33.1998C25.34 35.5098 27.21 38.2998 29.28 40.6798C33.39 36.6298 38.47 30.8898 40.28 25.6998Z" fill="#A445BB"/>
+                        <path d="M23.46 4.5801C21.1589 4.57879 18.8801 5.03106 16.7538 5.91106C14.6276 6.79105 12.6957 8.08152 11.0686 9.70866C9.44142 11.3358 8.15096 13.2677 7.27096 15.3939C6.39096 17.5202 5.93869 19.799 5.94001 22.1001C5.94001 30.2801 18.47 41.6801 22.33 45.0001C22.6425 45.2703 23.0419 45.419 23.455 45.419C23.8681 45.419 24.2675 45.2703 24.58 45.0001C25.64 44.0901 27.35 42.5701 29.28 40.6801C27.21 38.3001 25.34 35.5101 25.34 33.2001C25.3534 30.9092 26.2075 28.703 27.74 27.0001C26.5871 28.1017 25.0546 28.7175 23.46 28.7201C22.0019 28.7402 20.5812 28.2586 19.4359 27.3561C18.2905 26.4535 17.4901 25.1848 17.1687 23.7624C16.8473 22.34 17.0245 20.8504 17.6705 19.5431C18.3166 18.2358 19.3922 17.1901 20.7173 16.5814C22.0424 15.9726 23.5364 15.8377 24.9492 16.1993C26.3619 16.5608 27.6074 17.3968 28.4772 18.5673C29.347 19.7377 29.7881 21.1715 29.7267 22.6284C29.6653 24.0854 29.1051 25.477 28.14 26.5701C29.7284 25.0002 31.8277 24.0528 34.0559 23.9005C36.284 23.7481 38.4927 24.401 40.28 25.7401C40.7263 24.5768 40.9698 23.3457 41 22.1001C41.0013 19.7973 40.5484 17.5168 39.6671 15.3893C38.7859 13.2618 37.4936 11.329 35.8644 9.70158C34.2351 8.07417 32.3008 6.78413 30.1723 5.90531C28.0438 5.02649 25.7628 4.57616 23.46 4.5801Z" fill="#6F2CFF"/>
+                        </svg>
+                        <h4>Travel & tourism</h4>
+                </div>
+                <h3>Be persuasive. Inspire travellers. Drive revenue.</h3>
+                <p>Explore our solutions for travel and tourism.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M46.57 9.04991L26.05 2.67991C25.7834 2.59643 25.503 2.56644 25.2248 2.59168C24.9466 2.61692 24.6761 2.69688 24.429 2.82698C24.1818 2.95708 23.9627 3.13474 23.7844 3.34976C23.6061 3.56478 23.4721 3.81292 23.39 4.07991L18.54 19.6599L24.97 18.6599C25.5283 18.5737 26.0979 18.7129 26.5536 19.0467C27.0093 19.3805 27.3138 19.8816 27.4 20.4399L29 30.5399L39 33.6399C39.2672 33.7235 39.5483 33.7537 39.8272 33.7285C40.1061 33.7034 40.3773 33.6236 40.6253 33.4935C40.8733 33.3635 41.0932 33.1859 41.2724 32.9707C41.4517 32.7556 41.5868 32.5073 41.67 32.2399L48 11.7199C48.0844 11.4508 48.1143 11.1675 48.0878 10.8867C48.0614 10.6058 47.9792 10.3331 47.846 10.0844C47.7128 9.83578 47.5314 9.6162 47.3123 9.43856C47.0932 9.26092 46.8408 9.12879 46.57 9.04991Z" fill="#D15187"/>
+                        <path d="M17 24.6002L18.53 19.6602L3.73003 22.0002C3.19203 22.1004 2.71289 22.403 2.39111 22.8457C2.06934 23.2883 1.92939 23.8375 2.00003 24.3802L5.23003 45.6202C5.3186 46.1766 5.62404 46.6753 6.07947 47.007C6.53491 47.3388 7.10324 47.4765 7.66003 47.3902L28.9 44.1202C29.4583 44.0339 29.9595 43.7295 30.2933 43.2738C30.6271 42.8181 30.7662 42.2484 30.68 41.6902L29 30.5402L18.41 27.2602C18.1421 27.1791 17.8929 27.0458 17.6768 26.8679C17.4607 26.6901 17.282 26.4712 17.1509 26.2239C17.0198 25.9766 16.939 25.7058 16.9131 25.4271C16.8872 25.1484 16.9167 24.8674 17 24.6002Z" fill="#6F2CFF"/>
+                        <path d="M25 18.67L18.57 19.67L17 24.6C16.9165 24.8666 16.8865 25.147 16.9117 25.4252C16.937 25.7034 17.017 25.9739 17.147 26.2211C17.2771 26.4682 17.4548 26.6873 17.6698 26.8656C17.8849 27.0439 18.133 27.1779 18.4 27.26L29 30.54L27.4 20.45C27.3135 19.8978 27.0135 19.4016 26.5645 19.0686C26.1155 18.7356 25.5536 18.5925 25 18.67Z" fill="#A445BB"/>
+                        <path d="M32.48 20.4899C33.6674 20.4899 34.63 19.5274 34.63 18.3399C34.63 17.1525 33.6674 16.1899 32.48 16.1899C31.2926 16.1899 30.33 17.1525 30.33 18.3399C30.33 19.5274 31.2926 20.4899 32.48 20.4899Z" fill="white"/>
+                        <path d="M28.24 12.4401C29.4274 12.4401 30.39 11.4775 30.39 10.2901C30.39 9.10272 29.4274 8.14014 28.24 8.14014C27.0526 8.14014 26.09 9.10272 26.09 10.2901C26.09 11.4775 27.0526 12.4401 28.24 12.4401Z" fill="white"/>
+                        <path d="M40.53 16.26C41.7174 16.26 42.68 15.2974 42.68 14.11C42.68 12.9225 41.7174 11.96 40.53 11.96C39.3426 11.96 38.38 12.9225 38.38 14.11C38.38 15.2974 39.3426 16.26 40.53 16.26Z" fill="white"/>
+                        <path d="M24.42 24.7302C25.6074 24.7302 26.57 23.7676 26.57 22.5802C26.57 21.3928 25.6074 20.4302 24.42 20.4302C23.2326 20.4302 22.27 21.3928 22.27 22.5802C22.27 23.7676 23.2326 24.7302 24.42 24.7302Z" fill="white"/>
+                        <path d="M36.71 28.55C37.8974 28.55 38.86 27.5874 38.86 26.4C38.86 25.2126 37.8974 24.25 36.71 24.25C35.5226 24.25 34.56 25.2126 34.56 26.4C34.56 27.5874 35.5226 28.55 36.71 28.55Z" fill="white"/>
+                        <path d="M16.39 35.3601C17.5774 35.3601 18.54 34.3975 18.54 33.2101C18.54 32.0226 17.5774 31.0601 16.39 31.0601C15.2026 31.0601 14.24 32.0226 14.24 33.2101C14.24 34.3975 15.2026 35.3601 16.39 35.3601Z" fill="white"/>
+                        <path d="M9.04001 29.9802C10.2274 29.9802 11.19 29.0176 11.19 27.8302C11.19 26.6428 10.2274 25.6802 9.04001 25.6802C7.8526 25.6802 6.89001 26.6428 6.89001 27.8302C6.89001 29.0176 7.8526 29.9802 9.04001 29.9802Z" fill="white"/>
+                        <path d="M23.73 40.7302C24.9174 40.7302 25.88 39.7676 25.88 38.5802C25.88 37.3928 24.9174 36.4302 23.73 36.4302C22.5426 36.4302 21.58 37.3928 21.58 38.5802C21.58 39.7676 22.5426 40.7302 23.73 40.7302Z" fill="white"/>
+                        </svg>
+                        <h4>Online betting</h4>
+                </div>
+                <h3>Bring events to life. Personalize in real time. Be responsible..</h3>
+                <p>Explore our solutions for online betting.</p>
+                <div class="underline"></div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- start-foursection -->
+    <section class="foursection">
+        <div class="content">
+            <h2>A connected ecosystem.</h2>
+            <p>The Qubit personalization platform is designed with enterprise and high-growth businesses in mind.</p>
+            <p>Our open ecosystem approach means you can connect any data source and deliver personalization across any channel.</p>
+            <button> <a href="#"> See our integrations</a></button>
+        </div>
+
+        <div class="partners">
+            <img src="./assets/image/Rectangle (2).jpg" alt="">
+        </div>
+    </section>
+    <!--end-foursection -->
+
+
+    <!-- start-fivesection -->
+    <section class="fivesection">
+        <div class="text">Book a demo today.</div>
+        <div class="input">
+            <div class="button">
+                <input type="email" placeholder="Enter Your email">
+                <button><a href="#">Book a demo</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- end-fivesection -->
+
+    <!-- start-sixsection -->
+    <section class="sixsection">
+        <div class="banners">
+           <img src="./assets/image/Rectangle (4).png" alt="">
+        </div>
+        <div class="social">
+            <a href="#">Connect with us</a>
+
+            <ul>
+               <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- end-sixsection -->
+
+    <!-- start=footer -->
+    <footer>
+        <h1>Qubit</h1>
+        <p>© 2021 Qubit. All rights reserved.</p>
+    </footer>
+    <!-- end-footer -->
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/b66a165bb9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
